@@ -6,6 +6,14 @@ This configuration will,
 - Start nginx listening on port 80 and 443 sharing the local directory on /
 - Create a [Docker volume](https://docs.docker.com/storage/volumes/) called `varlib` to store Tailscale state and Let's Encrypt Certificates
 
+## Prerequisites
+
+This guide assumes the following,
+
+- A Tailscale account is setup
+- [MagicDNS](https://tailscale.com/kb/1081/magicdns/) is enabled
+- [HTTPS in Tailscale](https://tailscale.com/kb/1153/enabling-https/) is enabled
+
 ## Required Hostname Changes
 
 Update the hostname and Tailnet in the following files to match your own,
